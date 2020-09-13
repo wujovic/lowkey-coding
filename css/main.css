@@ -1,0 +1,188 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* CONTAINERS */
+.container-fluid {
+  padding: 3% 5%;
+}
+
+.row {
+  margin: 0;
+}
+
+/* NAVBAR */
+
+#title .container-fluid {
+  padding: 10px 10px 0 10px;
+  background-color: #c1c1c1;
+}
+
+.nav-bar {
+  border-radius: 10px;
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  ;
+}
+
+.nav-item {
+  padding: 0 18px 0 18px;
+  font-size: 1.2rem;
+}
+
+/* MAIN SECTION */
+.main-wrapper {
+  background-color: #c1c1c1;
+  padding: 30px 0 0 0;
+  border-radius: 0 0 50px 50px;
+
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-template-areas:
+    "left-grid right-grid"
+}
+
+.left-grid {
+  grid-area: left-grid;
+  display: flex;
+  justify-content: center;
+  padding: 5% 0;
+}
+
+#logo {
+  width: 70%;
+  height: 80%;
+  border: 1.5px solid black;
+  border-radius: 10px;
+}
+
+.right-grid {
+  grid-area: right-grid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0;
+}
+
+.features-slide {
+  padding: 0 10% 5% 10%;
+  text-align: center;
+  width: 100%;
+}
+
+/* PRICING SECTION */
+.cards-wrapper {
+  background-color: #fff;
+  padding: 5% 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    "card1 card2 card3";
+
+  display: flex;
+  justify-content: space-evenly;
+
+}
+
+.card {
+  text-align: center;
+}
+
+.card-body {
+  padding: 2rem 1.25rem;
+}
+
+.card-title {
+  margin: 1rem 0;
+}
+
+.card-text {
+  margin: 0 auto 1rem auto;
+  width: 60%;
+}
+
+.card1 {
+  grid-area: card1;
+}
+
+.card2 {
+  grid-area: card2;
+}
+
+.card3 {
+  grid-area: card3;
+}
+
+.order-button:hover {
+  background-color: #cdcdcd;
+}
+
+/* FOOTER SECTION */
+#footer {
+  background-color: #cdcdcd;
+  border-radius: 50px 50px 0 0;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.icon-social {
+  margin: 2%;
+}
+
+/* MEDIA QUERYS */
+@media (max-width: 1024px) {
+  .main-wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "left-grid"
+      "right-grid";
+  }
+
+  .cards-wrapper {
+    background-color: #fff;
+    padding: 5% 0;
+    width: 70%;
+    margin: 0 auto 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "card1"
+      "card2"
+      "card3";
+
+  }
+
+  .card {
+    margin: 5% 0;
+  }
+
+}
